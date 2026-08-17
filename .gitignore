@@ -1,0 +1,11 @@
+# dependențe
+node_modules/
+
+# gunoi de sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# jurnale și temporare
+*.log
+*.tmp

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-17T00:00:00Z",
+  "title": "Design System: Nuruk",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Cerneală-espresso",
+        "canonical": "#17110C",
+        "tonalRamp": ["#0C0806", "#17110C", "#241A12", "#3A2A1D", "#5A4230", "#8A6C52", "#B99B7E", "#E3D2C1"]
+      },
+      "ink-raised": {
+        "role": "neutral",
+        "displayName": "Cerneală ridicată",
+        "canonical": "#201811",
+        "tonalRamp": ["#100C08", "#201811", "#2E2318", "#453421", "#63492F", "#8E6C4C", "#BC9B77", "#E6D6C2"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Hârtie de registru",
+        "canonical": "#EDE2CE",
+        "tonalRamp": ["#2A2318", "#443A28", "#61533B", "#82714F", "#A79268", "#C9B48B", "#EDE2CE", "#F9F4E9"]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Auriu de registru",
+        "canonical": "#E5C987",
+        "tonalRamp": ["#2B2110", "#463719", "#634E23", "#83682E", "#A4853C", "#C2A15A", "#E5C987", "#F5E6BF"]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Auriu adâncit",
+        "canonical": "#C2A15A",
+        "tonalRamp": ["#241B0D", "#3D2E15", "#57421D", "#755927", "#9A7A3D", "#C2A15A", "#DCC48E", "#F0E2C0"]
+      },
+      "gold-on-paper": {
+        "role": "primary",
+        "displayName": "Auriu coborât pe hârtie",
+        "canonical": "#7E5F1C",
+        "tonalRamp": ["#1E1607", "#33260C", "#4B3812", "#654A17", "#7E5F1C", "#A67E2C", "#D4B565", "#E9D6A6"]
+      },
+      "on-ink": {
+        "role": "neutral",
+        "displayName": "Text pe cerneală",
+        "canonical": "rgba(237, 226, 206, 0.94)",
+        "tonalRamp": ["#2A2519", "#453E2B", "#63593F", "#847755", "#A79873", "#C8BB9B", "#EDE2CE", "#F7F1E3"]
+      },
+      "on-paper": {
+        "role": "neutral",
+        "displayName": "Text pe hârtie",
+        "canonical": "rgba(23, 17, 12, 0.94)",
+        "tonalRamp": ["#0C0806", "#17110C", "#2C211A", "#463629", "#6B543F", "#96795D", "#C0A88C", "#E7DBC9"]
+      },
+      "rule-ink": {
+        "role": "neutral",
+        "displayName": "Liniatură pe cerneală",
+        "canonical": "rgba(237, 226, 206, 0.085)",
+        "tonalRamp": ["#191309", "#221A0F", "#2D2317", "#3A2F21", "#4A3E2F", "#5D5040", "#726455", "#89796B"]
+      },
+      "rule-paper": {
+        "role": "neutral",
+        "displayName": "Liniatură pe hârtie",
+        "canonical": "rgba(23, 17, 12, 0.10)",
+        "tonalRamp": ["#3A2F22", "#544633", "#6F5F49", "#8A7A62", "#A5967E", "#C0B29B", "#D9CDB9", "#EDE2CE"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Titlu de filă", "purpose": "Titlul eroului, o singură dată pe pagină." },
+      "headline": { "displayName": "Cap de secțiune", "purpose": "Capetele de filă și numele tejghelelor." },
+      "title": { "displayName": "Nume de rând", "purpose": "Rânduri de meniu, etape ale curbei, sloturi rezervate." },
+      "body": { "displayName": "Text curent", "purpose": "Paragrafe și descrieri; măsură 46–60ch." },
+      "lede": { "displayName": "Fraza de intrare", "purpose": "Un paragraf sub titlul eroului, max 42ch." },
+      "numeral": { "displayName": "Cifra de registru", "purpose": "Ore, temperaturi, durate, procente, indexuri, telefoane. Întotdeauna tabular." },
+      "label": { "displayName": "Cap pre-tipărit", "purpose": "Etichete, navigație, butoane, legende de coloană — mono în capitale spațiate." },
+      "hand": { "displayName": "Însemnare de margine", "purpose": "Exclusiv marginalia, rotită, sub 26ch." }
+    },
+    "shadows": [
+      { "name": "plate-ink", "value": "0 30px 70px -34px rgba(0,0,0,0.95), 0 2px 6px -2px rgba(0,0,0,0.6)", "purpose": "Sub rama fotografiei lipite pe filă de cerneală." },
+      { "name": "plate-paper", "value": "0 26px 60px -32px rgba(23,17,12,0.6)", "purpose": "Aceeași ramă, pe filă de hârtie." },
+      { "name": "plate-vignette", "value": "inset 0 0 60px rgba(23,17,12,0.45)", "purpose": "Stinge marginea fotografiei în filă." },
+      { "name": "tape-lift", "value": "drop-shadow(0 2px 3px rgba(0,0,0,0.45))", "purpose": "Bucata de bandă adezivă stă peste hârtie." },
+      { "name": "state-pulse", "value": "0 0 0 7px rgba(229,201,135,0)", "purpose": "Halou pulsat, doar pe punctul „deschis acum”." },
+      { "name": "curve-glow", "value": "drop-shadow(0 0 12px rgba(229,201,135,0.28))", "purpose": "Curba de fermentație desenată de scroll." }
+    ],
+    "motion": [
+      { "name": "ease-leaf", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Easing unic pentru toate tranzițiile CSS (0.4s–1s)." },
+      { "name": "reveal-row", "value": "clip-path: inset(0% 0% 100% 0%) → none, 1s, expo.out, once", "purpose": "Gramatica unică de intrare pentru rândurile de registru, tejghele și probe." },
+      { "name": "scrub-process", "value": "ScrollTrigger scrub 0.5 pe 340vh", "purpose": "Curba de fermentație și schimbarea probei." },
+      { "name": "scrub-daystrip", "value": "ScrollTrigger scrub 0.4 pe 220vh", "purpose": "Aprinderea pașilor din linia zilei." },
+      { "name": "momentum", "value": "Lenis duration 1.15, touchMultiplier 1.6", "purpose": "Derulare cu inerție; dezactivată la prefers-reduced-motion." },
+      { "name": "ambient-swap", "value": "6400ms, opacity 2.4s / transform 7.6s linear", "purpose": "Secvența fotografică a probei din erou." },
+      { "name": "clock-tick", "value": "30000ms", "purpose": "Reîmprospătarea ceasului, a datei și a stării deschis/închis." }
+    ],
+    "breakpoints": [
+      { "name": "rows", "value": "48rem" },
+      { "name": "mosaic", "value": "56rem" },
+      { "name": "leaf-split", "value": "62rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Buton principal auriu",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Acțiunea unică a filei — supratiparul auriu pe cerneală.",
+      "html": "<a class=\"ds-btn-gold\" href=\"#locatii\">Cele trei tejghele</a>",
+      "css": ".ds-btn-gold { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.95rem 1.6rem; background: #E5C987; color: #17110C; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.82rem; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; border: none; border-radius: 0; box-shadow: 0 14px 30px -18px rgba(0,0,0,0.9); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), box-shadow 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 22px 40px -20px rgba(0,0,0,0.95); } .ds-btn-gold:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; }"
+    },
+    {
+      "name": "Buton fantomă",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Acțiunea secundară: text subliniat cu liniatura filei.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#proces\">Cum lucrăm aluatul</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.95rem 1.6rem; color: rgba(237,226,206,0.68); font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.82rem; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid rgba(237,226,206,0.085); border-radius: 0; transition: color 0.45s cubic-bezier(0.16,1,0.3,1), border-color 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ghost:hover { color: #E5C987; border-bottom-color: #E5C987; } .ds-btn-ghost:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; }"
+    },
+    {
+      "name": "CTA de program cu punct de stare",
+      "kind": "nav",
+      "refersTo": "topbar-cta",
+      "description": "Acțiunea din bara fixă; punctul pulsează doar cât tejgheaua este deschisă.",
+      "html": "<a class=\"ds-cta-hours\" href=\"#locatii\"><span class=\"ds-cta-dot\" data-state=\"open\" aria-hidden=\"true\"></span><span>Deschis acum · până la 18:00</span></a>",
+      "css": ".ds-cta-hours { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.5rem 0.9rem; border: 1px solid rgba(229,201,135,0.32); border-radius: 0; color: #E5C987; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.76rem; letter-spacing: 0.06em; text-decoration: none; transition: border-color 0.4s cubic-bezier(0.16,1,0.3,1), background 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-cta-hours:hover { border-color: #E5C987; background: rgba(229,201,135,0.08); } .ds-cta-hours:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; } .ds-cta-dot { width: 6px; height: 6px; border-radius: 99px; background: rgba(237,226,206,0.56); } .ds-cta-dot[data-state=\"open\"] { background: #E5C987; animation: ds-pulse 2.8s cubic-bezier(0.16,1,0.3,1) infinite; } @keyframes ds-pulse { 0% { box-shadow: 0 0 0 0 rgba(229,201,135,0.5); } 70% { box-shadow: 0 0 0 7px rgba(229,201,135,0); } 100% { box-shadow: 0 0 0 0 rgba(229,201,135,0); } }"
+    },
+    {
+      "name": "Navigație de filă",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Linkuri mono în capitale; linia aurie se desenează de la stânga la hover.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a href=\"#meniu\">Meniu</a><a href=\"#proces\">Proces</a><a href=\"#galerie\">Galerie</a><a href=\"#locatii\">Locații</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 1.9rem; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.78rem; letter-spacing: 0.09em; text-transform: uppercase; background: rgba(23,17,12,0.94); padding: 1rem 1.5rem; } .ds-nav a { position: relative; padding-block: 0.35rem; color: rgba(237,226,206,0.68); text-decoration: none; } .ds-nav a::after { content: \"\"; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: #E5C987; transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-nav a:hover { color: rgba(237,226,206,0.94); } .ds-nav a:hover::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; }"
+    },
+    {
+      "name": "Chip de conținut neconfirmat",
+      "kind": "chip",
+      "refersTo": "placeholder-chip",
+      "description": "Contur punctat care declară explicit ce conținut încă nu a venit de la client.",
+      "html": "<p class=\"ds-chip-tbc\"><span aria-hidden=\"true\">◇</span> Listă-model, de înlocuit cu meniul real Nuruk</p>",
+      "css": ".ds-chip-tbc { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.75rem; border: 1px dashed rgba(126,95,28,0.40); border-radius: 0; color: #7E5F1C; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.06em; margin: 0; }"
+    },
+    {
+      "name": "Rând de registru",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "Gramatica structurală a paginii: nume serif, descriere, cifră aliniată la dreapta, separator de 1px.",
+      "html": "<div class=\"ds-row\"><h3 class=\"ds-row-name\">Croissant cu unt</h3><p class=\"ds-row-desc\">Douăzeci și șapte de foi de aluat și unt, laminate la rece. Se rulează dimineața, nu cu o zi înainte.</p><p class=\"ds-row-num\">27 <span>foi</span></p></div>",
+      "css": ".ds-row { display: grid; grid-template-columns: 15rem 1fr 9rem; gap: 0.4rem 2rem; align-items: baseline; padding-block: 1.5rem; border-bottom: 1px solid rgba(23,17,12,0.10); background: #EDE2CE; transition: background 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-row:hover { background: rgba(23,17,12,0.035); } .ds-row-name { margin: 0; font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 1.8rem; line-height: 1.12; letter-spacing: -0.012em; color: rgba(23,17,12,0.94); } .ds-row-desc { margin: 0; max-width: 52ch; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 0.96rem; line-height: 1.62; color: rgba(23,17,12,0.70); } .ds-row-num { margin: 0; text-align: right; font-family: 'Courier Prime', ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 1.05rem; color: #7E5F1C; white-space: nowrap; } .ds-row-num span { display: block; margin-top: 0.2rem; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(23,17,12,0.56); }"
+    },
+    {
+      "name": "Rând rezervat",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Linie de registru neconsemnată: ține locul recenziilor, presei și distincțiilor fără să le fabrice.",
+      "html": "<div class=\"ds-row-open\"><p class=\"ds-open-index\">01</p><h3 class=\"ds-open-slot\">Recenzie de client</h3><p class=\"ds-open-meta\">Nume · locație · dată</p><p class=\"ds-open-state\">rând liber</p></div>",
+      "css": ".ds-row-open { display: grid; grid-template-columns: 4rem 1fr 1fr 8rem; gap: 0.3rem 2rem; align-items: baseline; padding-block: 2rem; border-bottom: 1px dashed rgba(23,17,12,0.3); background: #EDE2CE; } .ds-row-open p { margin: 0; font-family: 'Courier Prime', ui-monospace, monospace; } .ds-open-index { font-size: 0.8rem; letter-spacing: 0.1em; color: rgba(23,17,12,0.56); } .ds-open-slot { margin: 0; font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 1.7rem; line-height: 1.12; letter-spacing: -0.012em; color: rgba(23,17,12,0.70); } .ds-open-meta { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(23,17,12,0.56); } .ds-open-state { text-align: right; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: #7E5F1C; }"
+    },
+    {
+      "name": "Rând de tejghea",
+      "kind": "custom",
+      "refersTo": "counter-row",
+      "description": "Locația ca rând de registru: nume, adresă, program cu punct de stare, telefon apelabil.",
+      "html": "<div class=\"ds-counter\"><p class=\"ds-counter-index\">01</p><h3 class=\"ds-counter-name\">Mircea cel Bătrân</h3><p class=\"ds-counter-addr\">Bd. Mircea cel Bătrân 139</p><p class=\"ds-counter-hours\"><span class=\"ds-counter-dot\" data-state=\"open\" aria-hidden=\"true\"></span>09:00 – 18:00, zilnic</p><a class=\"ds-counter-tel\" href=\"tel:+40770711329\">0770 711 329</a></div>",
+      "css": ".ds-counter { display: grid; grid-template-columns: 4rem 1fr 1fr 12rem; gap: 0.35rem 2rem; align-items: baseline; padding-block: 2.4rem; border-bottom: 1px solid rgba(237,226,206,0.085); background: #17110C; transition: background 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-counter:hover { background: rgba(237,226,206,0.03); } .ds-counter p { margin: 0; } .ds-counter-index { grid-row: span 2; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.8rem; letter-spacing: 0.1em; color: rgba(237,226,206,0.56); } .ds-counter-name { grid-column: 2; margin: 0; font-family: 'Libre Caslon Display', Georgia, serif; font-weight: 400; font-size: 2.4rem; line-height: 1.06; letter-spacing: -0.018em; color: rgba(237,226,206,0.94); } .ds-counter-addr { grid-column: 2; font-family: 'Libre Caslon Text', Georgia, serif; color: rgba(237,226,206,0.68); } .ds-counter-hours { grid-column: 3; grid-row: 1; display: flex; align-items: center; gap: 0.55rem; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.85rem; color: rgba(237,226,206,0.68); } .ds-counter-dot { width: 6px; height: 6px; border-radius: 99px; background: #E5C987; flex: none; } .ds-counter-tel { grid-column: 4; grid-row: 1 / span 2; justify-self: end; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 1.2rem; color: #E5C987; text-decoration: none; border-bottom: 1px solid rgba(229,201,135,0.3); transition: border-color 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-counter-tel:hover { border-bottom-color: #E5C987; } .ds-counter-tel:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; }"
+    },
+    {
+      "name": "Proba lipită",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Singurul mod în care fotografia intră în pagină: ramă rotită sub 2°, vinietă interioară, două bucăți de bandă pe colț.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-plate-frame\"><img src=\"assets/img/crumb-macro-crop.jpg\" alt=\"Secțiune printr-o pâine cu maia.\" width=\"1100\" height=\"1320\"><img class=\"ds-tape ds-tape-tl\" src=\"assets/img/tape-01.png\" alt=\"\" width=\"300\" height=\"84\" aria-hidden=\"true\"><img class=\"ds-tape ds-tape-br\" src=\"assets/img/tape-02.png\" alt=\"\" width=\"260\" height=\"76\" aria-hidden=\"true\"></div><figcaption class=\"ds-plate-cap\">Proba orei</figcaption></figure>",
+      "css": ".ds-plate { margin: 0; width: 330px; } .ds-plate-frame { position: relative; overflow: hidden; aspect-ratio: 4 / 5; transform: rotate(1.5deg); box-shadow: 0 28px 64px -30px rgba(0,0,0,0.95), 0 2px 6px -2px rgba(0,0,0,0.6); } .ds-plate-frame > img:first-child { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.78) contrast(1.06) brightness(0.88); } .ds-plate-frame::after { content: \"\"; position: absolute; inset: 0; z-index: 3; box-shadow: inset 0 0 55px rgba(23,17,12,0.5); pointer-events: none; } .ds-tape { position: absolute; z-index: 4; width: 98px; height: auto; opacity: 0.82; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.45)); } .ds-tape-tl { top: -12px; left: -18px; transform: rotate(-45deg); } .ds-tape-br { bottom: -12px; right: -18px; transform: rotate(-45deg); } .ds-plate-cap { margin-top: 0.9rem; text-align: right; font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(237,226,206,0.56); }"
+    },
+    {
+      "name": "Marcajul „acum”",
+      "kind": "custom",
+      "refersTo": "now-marker",
+      "description": "Ștampilă aurie cu fir cu plumb, poziționată din ceasul real pe linia zilei.",
+      "html": "<div class=\"ds-now\"><span class=\"ds-now-label\">07:42</span></div>",
+      "css": ".ds-now { display: flex; flex-direction: column; align-items: center; pointer-events: none; } .ds-now::before { content: \"\"; width: 1px; height: 108px; background: linear-gradient(to bottom, #E5C987, rgba(229,201,135,0)); } .ds-now-label { order: -1; margin-bottom: 0.5rem; padding: 0.25rem 0.5rem; background: #E5C987; color: #17110C; font-family: 'Courier Prime', ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 0.74rem; letter-spacing: 0.04em; white-space: nowrap; }"
+    },
+    {
+      "name": "Probă de galerie",
+      "kind": "card",
+      "refersTo": "specimen-tag",
+      "description": "Celulă de mozaic cu gradare fixă și etichetă mono permanent vizibilă. Nu reacționează la cursor: decizie explicită a clientului.",
+      "html": "<div class=\"ds-specimen\" tabindex=\"0\"><img src=\"assets/img/loaf-halves.jpg\" alt=\"Două jumătăți de pâine artizanală pe lemn.\" width=\"1600\" height=\"1067\"><span class=\"ds-specimen-tag\">01 · Secțiune</span></div>",
+      "css": ".ds-specimen { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #201811; } .ds-specimen img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85) contrast(1.05) brightness(0.92); } .ds-specimen-tag { position: absolute; left: 0.75rem; bottom: 0.75rem; z-index: 2; padding: 0.25rem 0.5rem; background: rgba(23,17,12,0.72); backdrop-filter: blur(6px); font-family: 'Courier Prime', ui-monospace, monospace; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: #E5C987; } .ds-specimen:focus-visible { outline: 2px solid #E5C987; outline-offset: 3px; }"
+    },
+    {
+      "name": "Însemnare de margine",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Singurul loc unde apare scrisul de mână: o observație rotită, sub 26ch, în culoarea accentului.",
+      "html": "<aside class=\"ds-marginalia\"><p>Când se termină, se termină. Nu coacem de două ori aceeași zi.</p></aside>",
+      "css": ".ds-marginalia { font-family: Caveat, cursive; font-size: 1.9rem; line-height: 1.3; color: #7E5F1C; } .ds-marginalia p { margin: 0; max-width: 26ch; transform: rotate(-1.4deg); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Carnetul de maia",
+    "overview": "Sistemul este un registru de fermentație ținut de mână: file întregi de cerneală-espresso și hârtie caldă care se succed una după alta, liniate la 1px pe un ritm de 32px, cu o linie de margine care coboară pe toată înălțimea filei. Dovada este cifra, nu adjectivul — fiecare oră, temperatură, hidratare și durată este tipărită în Courier Prime, cu cifre tabulare, ca într-un caiet completat la 3 dimineața. Fotografia nu decorează: intră ca probă lipită cu bandă adezivă, ușor rotită, cu umbră proprie.\n\nDensitatea este de registru, nu de broșură: rânduri late până la 82rem, separate de o singură linie de 1px, fără carduri, fără colțuri rotunde, fără casete. Ierarhia se face din contrastul dintre serif (Libre Caslon, în frază, niciodată în capitale) și mono (Courier Prime, în capitale spațiate, pentru tot ce e cap pre-tipărit sau cifră). Auriul de brand apare rar și cu scop: marcajul „acum”, acțiunea principală, ștampila de oră, starea „deschis”.\n\nRespingerea confirmată de build: eroul de categorie — fotografie full-bleed cu titlu serif centrat deasupra. Pe desktop prima priveliște este fila de registru cu proba lipită în dreapta. Divergență față de intenția inițială, consemnată ca atare: pe ecrane sub 62rem fotografia trece efectiv în spatele filei erou, sub un voal de cerneală de 0.80–0.98, pentru ca prima priveliște mobilă să fie textură și nu tipografie singură — este singurul loc unde fotografia funcționează ca fundal, și rămâne limitat la eroul mobil.",
+    "keyCharacteristics": [
+      "File alternante cerneală/hârtie, niciodată amestecate în aceeași secțiune",
+      "Liniatură de caiet la 1px, pas de 32px, estompată la capete",
+      "Zero raze de colț: tot ce nu e punct sau bulină are colț viu",
+      "Courier Prime pe fiecare cifră, cu tabular-nums",
+      "Un singur supratipar auriu, într-o singură nuanță, la două valori",
+      "Fotografia ca probă lipită cu bandă, cu rotație de ±0.9°–1.5°",
+      "Date reale în pagină: ceas viu, dată de azi, stare deschis/închis derivată din 09–18"
+    ],
+    "rules": [
+      { "name": "The Single Overprint Rule", "body": "Există un singur accent în tot sistemul, iar el trăiește ca variabilă scoped pe filă: --accent este auriul de brand pe .leaf--ink și aceeași nuanță coborâtă în valoare pe .leaf--paper. Componentele citesc întotdeauna var(--accent), niciodată un hex direct, ca un singur supratipar să supraviețuiască ambelor fundaluri.", "section": "colors" },
+      { "name": "The Alternating Leaf Rule", "body": "Fundalul se schimbă numai la granița de secțiune, ca filă întreagă. Nu se așază niciodată un bloc de hârtie într-o filă de cerneală (sau invers) — nu există „card” de fundal opus.", "section": "colors" },
+      { "name": "The Evidence-Not-Wallpaper Rule", "body": "Fotografia intră lipită într-o ramă cu bandă și umbră. Singura excepție consemnată în build este eroul sub 62rem, unde imaginea devine fundalul filei sub voal de cerneală 0.80–0.98; nicio altă secțiune nu are voie să o repete.", "section": "colors" },
+      { "name": "The Courier-On-Every-Number Rule", "body": "Orice cifră vizibilă în pagină — oră, temperatură, durată, hidratare, index, număr de telefon — se tipărește în Courier Prime cu tabular-nums. Un număr în serif este o eroare de sistem.", "section": "typography" },
+      { "name": "The Mono-Owns-The-Caps Rule", "body": "Capitalele spațiate aparțin exclusiv monoului. Serif-ul apare doar în frază, cu tracking negativ; nu se scrie niciodată cu text-transform: uppercase și nu se deschide niciodată tracking-ul pe el.", "section": "typography" },
+      { "name": "The Margin-Hand Rule", "body": "Caveat apare numai în .marginalia, ca observație lipită pe marginea filei, ușor rotită, sub 26ch. Nu intră niciodată în butoane, etichete, titluri sau text curent.", "section": "typography" },
+      { "name": "The Plate-Only Shadow Rule", "body": "Umbra este dovada că o fotografie a fost lipită fizic în filă. Suprafețele de text — rânduri, butoane, capete, celule — rămân plate. Dacă o umbră apare sub ceva care nu e hârtie fotografică, este o eroare.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do folosește var(--accent) pentru orice element auriu; culoarea se rezolvă singură pe filă de cerneală și pe filă de hârtie.",
+      "Do tipărește fiecare cifră în Courier Prime cu tabular-nums.",
+      "Do păstrează liniatura la pasul de 32px și toate separatoarele la 1px.",
+      "Do intră cu rândurile noi prin clip-path: inset(0% 0% 100% 0%) + expo.out, ca linia să se scrie de sus în jos.",
+      "Do lipește orice fotografie nouă în ramă, cu rotație sub 2° și două bucăți scurte de bandă prinse pe colț.",
+      "Do marchează conținutul nefurnizat de client cu chip punctat sau adnotare „de confirmat” în loc să-l inventezi.",
+      "Do scrie tot textul în română, inclusiv etichetele și stările.",
+      "Do păstrează programul 09:00–18:00 și cele trei adrese din Constanța ca fapte, oriunde apar.",
+      "Do lasă pagina lizibilă fără JS și retrage toate animațiile la prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't introduce o a doua culoare de accent; auriul are voie la două valori, nu la un partener.",
+      "Don't pune rază de colț pe nimic în afară de puncte, buline și cursorul de derulare.",
+      "Don't capitaliza sau deschide tracking-ul pe Libre Caslon; capitalele spațiate sunt ale monoului.",
+      "Don't folosi Caveat în afara însemnărilor de margine.",
+      "Don't pune umbră sub text, rânduri sau butoane fantomă — umbra aparține doar probelor fotografice.",
+      "Don't folosi fotografia ca fundal decorativ; singura excepție este eroul sub 62rem, sub voalul de cerneală.",
+      "Don't transforma un rând de registru în card cu fundal propriu, chenar sau colț rotunjit.",
+      "Don't amesteca hârtia și cerneala în aceeași filă.",
+      "Don't întinde banda adezivă ca fâșie lată peste o fotografie.",
+      "Don't folosi glife text în locul unei pictograme reale: ◇ este marcaj de listă, iar orice pictogramă adevărată se desenează inline în SVG."
+    ]
+  }
+}

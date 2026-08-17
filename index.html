@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuruk — patiserie artizanală și cafea de specialitate, Constanța</title>
+<meta name="description" content="Aluat dospit lent, patiserie laminată și cafea de specialitate. Trei tejghele în Constanța: Mircea cel Bătrân 139, Tomis 43, Tomis 334. Zilnic 09:00–18:00.">
+<meta name="theme-color" content="#17110C">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--
+  THESIS: Dovada calității este caietul, nu adjectivul. Pagina Nuruk este registrul de
+  fermentație al brutăriei — ore, temperaturi, hidratare, în mâna cuiva treaz la 3 dimineața.
+  Refuză eroul de categorie: croissant full-bleed cu titlu serif centrat deasupra.
+  OWN-WORLD: Cerneală-espresso #17110C și hârtie de registru #EDE2CE alternând ca file întregi;
+  linii de caiet la 1px pe ritm de 32px; Libre Caslon în capitale spațiate pentru capetele
+  pre-tipărite, Courier Prime pentru fiecare cifră, Caveat pentru însemnările de pe margine;
+  auriul de brand #E5C987 ca singur supratipar — marcajul „acum”, acțiunea principală, ștampila.
+  Fotografia intră ca probă lipită în filă, niciodată ca fundal.
+  STORY: Vizitatorul înțelege că Nuruk își măsoară pâinea în ore, crede că nimeni lângă el nu
+  face asta, și pleacă spre una dintre cele trei tejghele.
+  FIRST VIEWPORT: Filă deschisă pe fond de cerneală. Stânga: capul de registru, data de azi,
+  ceasul real și starea reală „deschis/închis” derivată din programul 09–18; sub ele titlul
+  „Se face noaptea, se coace dimineața”. Dreapta: macro de miez, lipit cu bandă, ușor rotit, cu
+  o linie de trimitere și eticheta lui în Courier. Acțiunea principală, aurie, stă pe linie
+  jos-stânga: cele trei tejghele.
+  FORM: Carnetul de maia — candidatul 1 al listei mele, ales de utilizator peste candidatul 7 al
+  rolului. Seed key eca2dc46.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#continut">Sari la conținut</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a class="topbar__mark" href="#top" aria-label="Nuruk — acasă">
+    <img src="assets/brand/nuruk-logo.svg" alt="" width="2172" height="724">
+  </a>
+  <nav class="topbar__nav" aria-label="Principal">
+    <a href="#meniu">Meniu</a>
+    <a href="#proces">Proces</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#locatii">Locații</a>
+  </nav>
+  <a class="topbar__cta" href="#locatii">
+    <span class="topbar__dot" data-open-dot aria-hidden="true"></span>
+    <span data-open-label>Program 09–18</span>
+  </a>
+</header>
+
+<main id="continut">
+
+<!-- ═══ FILA 1 — CAPUL DE REGISTRU ═══════════════════════════════════════ -->
+<section class="leaf leaf--ink hero" id="top">
+  <div class="rules" aria-hidden="true"></div>
+  <div class="margin-rule" aria-hidden="true"></div>
+
+  <div class="hero__grid">
+
+    <div class="hero__entry">
+      <p class="ledgerhead">
+        <span>Registru de fermentație</span>
+        <span class="ledgerhead__rule" aria-hidden="true"></span>
+        <span class="num" data-today>—</span>
+      </p>
+
+      <dl class="clockblock">
+        <div>
+          <dt>Ora</dt>
+          <dd class="num num--lg" data-clock>--:--</dd>
+        </div>
+        <div>
+          <dt>Starea tejghelei</dt>
+          <dd class="num" data-open-state>—</dd>
+        </div>
+      </dl>
+
+      <h1 class="display">Se face noaptea,<br>se coace dimineața.</h1>
+
+      <p class="lede">Aluat dospit lent, patiserie laminată foaie cu foaie și cafea extrasă
+        la comandă. Trei tejghele în Constanța, deschise zilnic de la nouă la șase.</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#locatii">Cele trei tejghele</a>
+        <a class="btn btn--ghost" href="#proces">Cum lucrăm aluatul</a>
+      </div>
+    </div>
+
+    <figure class="hero__plate" data-plate>
+      <div class="plate__frame plate__frame--seq">
+        <img class="seq" src="assets/img/crumb-macro-crop.jpg" alt="Secțiune printr-o pâine cu maia: miez cu alveole neregulate și crustă groasă, rumenită." width="1100" height="1320" data-ambient data-ambient-on fetchpriority="high">
+        <img class="seq" src="assets/img/dough-shape.jpg" alt="" width="2200" height="1467" data-ambient aria-hidden="true">
+        <img class="seq" src="assets/img/espresso-drip.jpg" alt="" width="2200" height="1467" data-ambient aria-hidden="true">
+        <img src="assets/img/tape-01.png" class="tape-img tape-img--tl" alt="" width="300" height="84" aria-hidden="true">
+        <img src="assets/img/tape-02.png" class="tape-img tape-img--br" alt="" width="260" height="76" aria-hidden="true">
+      </div>
+      <figcaption class="callout">
+        <svg class="callout__line" viewBox="0 0 120 60" aria-hidden="true" preserveAspectRatio="none">
+          <path d="M118 4 L60 4 L2 56" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <circle cx="2" cy="56" r="2.5" fill="currentColor"/>
+        </svg>
+        <span class="num">Alveolă neregulată. Semnul dospirii lungi, nu al drojdiei grăbite.</span>
+      </figcaption>
+    </figure>
+
+  </div>
+
+  <p class="scrollcue" aria-hidden="true"><span>Deschide fila</span></p>
+</section>
+
+
+<!-- ═══ FILA 2 — LINIA ZILEI ═════════════════════════════════════════════ -->
+<section class="leaf leaf--ink daystrip" id="ziua" data-daystrip>
+  <div class="rules" aria-hidden="true"></div>
+
+  <div class="daystrip__sticky">
+    <header class="secthead secthead--ink">
+      <h2 class="secthead__title">Ziua a doua, cea în care se coace</h2>
+      <p class="secthead__note">Aluatul a fost făcut ieri și a stat la rece peste noapte. Ce urmează e doar
+        dimineața. Marcajul auriu stă pe ora la care citești pagina.</p>
+    </header>
+
+    <div class="strip" role="img" aria-label="Dimineața de coacere, de la ora 3 la ora 18.">
+      <div class="strip__rail" aria-hidden="true"></div>
+      <div class="strip__now" data-now-marker><span class="num" data-now-label>--:--</span></div>
+      <ol class="strip__steps">
+        <li data-hour="3"><span class="num">03</span><span class="strip__what">Se aprinde cuptorul, ies pâinile de la rece</span></li>
+        <li data-hour="4"><span class="num">04</span><span class="strip__what">Se laminează aluatul de croissant</span></li>
+        <li data-hour="5"><span class="num">05</span><span class="strip__what">Croissantele se rulează bucată cu bucată</span></li>
+        <li data-hour="6"><span class="num">06</span><span class="strip__what">Dospire finală, la cald</span></li>
+        <li data-hour="7"><span class="num">07</span><span class="strip__what">Primul cuptor: pâinea</span></li>
+        <li data-hour="8"><span class="num">08</span><span class="strip__what">Al doilea cuptor: croissantele</span></li>
+        <li data-hour="9" data-open><span class="num">09</span><span class="strip__what">Se deschid ușile</span></li>
+        <li data-hour="12"><span class="num">12</span><span class="strip__what">Al treilea cuptor, dacă mai e aluat</span></li>
+        <li data-hour="18" data-close><span class="num">18</span><span class="strip__what">Se închide. Ce a rămas, rămâne în urmă</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FILA 3 — MENIUL ══════════════════════════════════════════════════ -->
+<section class="leaf leaf--paper menu" id="meniu">
+  <div class="rules rules--paper" aria-hidden="true"></div>
+  <div class="margin-rule margin-rule--paper" aria-hidden="true"></div>
+
+  <header class="secthead">
+    <h2 class="secthead__title">Ce trece prin cuptor</h2>
+    <p class="secthead__note">Fiecare rând poartă timpul lui. Stocul e limitat de câte tăvi încap într-o dimineață.</p>
+    <p class="placeholder-chip"><span aria-hidden="true">◇</span> Listă-model, de înlocuit cu meniul real Nuruk</p>
+  </header>
+
+  <div class="ledger" data-ledger>
+    <p class="ledger__legend">
+      <span>Denumire</span><span>Descriere</span><span class="num">Timp de lucru</span>
+    </p>
+
+    <ol class="ledger__rows">
+      <li class="row" data-row>
+        <h3 class="row__name">Pâine cu maia</h3>
+        <p class="row__desc">Făină de grâu, apă, sare. Dospire rece peste noapte, coaptă pe vatră până crusta trosnește la răcire.</p>
+        <p class="row__num num">24 h <span>dospire</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Croissant cu unt</h3>
+        <p class="row__desc">Douăzeci și șapte de foi de aluat și unt, laminate la rece. Se rulează dimineața, nu cu o zi înainte.</p>
+        <p class="row__num num">27 <span>foi</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Pain au chocolat</h3>
+        <p class="row__desc">Același aluat laminat, două batoane de ciocolată neagră care rămân moi în mijloc.</p>
+        <p class="row__num num">2 <span>batoane</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Focaccia cu maia</h3>
+        <p class="row__desc">Hidratare mare, ulei de măsline peste tot, degete înfipte adânc înainte de cuptor.</p>
+        <p class="row__num num">85 % <span>hidratare</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Espresso</h3>
+        <p class="row__desc">Măcinat la comandă, dozat pe cântar. Dacă trece de treizeci de secunde, se aruncă și se ia de la capăt.</p>
+        <p class="row__num num">25–30 <span>secunde</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Filtru V60</h3>
+        <p class="row__desc">Turnare în trei reprize, apă la nouăzeci și doi de grade. Se bea și când se răcește — atunci se aud fructele.</p>
+        <p class="row__num num">3:30 <span>extracție</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Flat white</h3>
+        <p class="row__desc">Lapte texturat scurt, fără spumă groasă. Espresso-ul rămâne audibil sub el.</p>
+        <p class="row__num num">150 <span>ml</span></p>
+      </li>
+      <li class="row" data-row>
+        <h3 class="row__name">Cafea la filtru, batch</h3>
+        <p class="row__desc">Se face din oră în oră. Dacă a stat mai mult de o oră, o vărsăm.</p>
+        <p class="row__num num">60 <span>minute</span></p>
+      </li>
+    </ol>
+  </div>
+
+  <aside class="marginalia marginalia--menu" data-marginalia>
+    <p>Când se termină, se termină. Nu coacem de două ori aceeași zi.</p>
+  </aside>
+</section>
+
+
+<!-- ═══ FILA 4 — PROCESUL ════════════════════════════════════════════════ -->
+<section class="leaf leaf--ink process" id="proces" data-process>
+  <div class="rules" aria-hidden="true"></div>
+
+  <div class="process__sticky">
+    <header class="secthead secthead--ink">
+      <h2 class="secthead__title">Curba de fermentație</h2>
+      <p class="secthead__note">Un ciclu întreg, de la maia la cuptor: treizeci și una de ore, întinse peste două zile.
+        Derulează ca să-l parcurgi.</p>
+    </header>
+
+    <div class="curve">
+      <svg class="curve__svg" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+        <g class="curve__grid">
+          <line x1="0" y1="60" x2="1000" y2="60"/><line x1="0" y1="120" x2="1000" y2="120"/>
+          <line x1="0" y1="180" x2="1000" y2="180"/><line x1="0" y1="240" x2="1000" y2="240"/>
+        </g>
+        <path class="curve__path" data-curve
+          d="M0,285 C80,283 130,268 180,240 C230,212 250,196 300,192 C350,188 372,206 420,200 C470,194 500,160 560,132 C620,104 660,96 720,74 C780,52 840,34 900,22 C940,14 970,10 1000,8"
+          fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/>
+        <circle class="curve__dot" data-curve-dot cx="0" cy="285" r="5"/>
+      </svg>
+
+      <ol class="curve__stops">
+        <li data-stop="0" data-proof="assets/img/flour-hand.jpg">
+          <div class="stop__head">
+            <h3>Maiaua se trezește</h3>
+            <p class="num">Ziua 1 · 08:00 · 24°C</p>
+          </div>
+          <p>Cultura hrănită cu douăsprezece ore înainte își dublează volumul. Miroase a iaurt și a mere, nu a oțet. Dacă miroase a oțet, am întârziat.</p>
+        </li>
+        <li data-stop="1" data-proof="assets/img/dough-knead.jpg">
+          <div class="stop__head">
+            <h3>Autoliză și frământ</h3>
+            <p class="num">Ziua 1 · 12:00 · 26°C</p>
+          </div>
+          <p>Făina și apa stau împreună o oră înainte de sare. Glutenul se leagă singur, fără să-l forțăm; frământatul devine scurt.</p>
+        </li>
+        <li data-stop="2" data-proof="assets/img/dough-shape.jpg">
+          <div class="stop__head">
+            <h3>Împăturiri la interval</h3>
+            <p class="num">Ziua 1 · 14:00 · 25°C</p>
+          </div>
+          <p>La fiecare treizeci de minute, patru împăturiri. Aluatul trece de la lichid la elastic fără să pierdem bulele făcute până atunci.</p>
+        </li>
+        <li data-stop="3" data-proof="assets/img/loaves-rack.jpg">
+          <div class="stop__head">
+            <h3>Dospire rece</h3>
+            <p class="num">Ziua 1 · 18:00 · 6°C</p>
+          </div>
+          <p>Modelat și mutat la frig, unde stă până dimineață. Aici lucrează timpul, nu noi: aciditatea urcă lent și gustul se adâncește peste noapte.</p>
+        </li>
+        <li data-stop="4" data-proof="assets/img/crust-slices.jpg">
+          <div class="stop__head">
+            <h3>Cuptorul</h3>
+            <p class="num">Ziua 2 · 07:00 · 250°C</p>
+          </div>
+          <p>Abur în primele minute, apoi uscat. Crusta trece de la auriu la castaniu, iar pâinea cântă câteva minute după ce iese.</p>
+        </li>
+      </ol>
+    </div>
+
+    <figure class="proof" data-proof-plate aria-hidden="true">
+      <div class="proof__frame">
+        <img src="assets/img/flour-hand.jpg" alt="" width="1400" height="933" data-proof-img loading="lazy">
+        <img src="assets/img/tape-01.png" class="tape-img tape-img--tl" alt="" width="300" height="84">
+        <img src="assets/img/tape-02.png" class="tape-img tape-img--br" alt="" width="260" height="76">
+      </div>
+      <figcaption class="proof__cap num" data-proof-cap>Proba orei</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- ═══ FILA 5 — ORIGINEA ════════════════════════════════════════════════ -->
+<section class="leaf leaf--paper origin" id="origine">
+  <div class="rules rules--paper" aria-hidden="true"></div>
+  <div class="margin-rule margin-rule--paper" aria-hidden="true"></div>
+
+  <div class="origin__grid">
+    <figure class="origin__plate">
+      <div class="plate__frame plate__frame--paper">
+        <img src="assets/img/espresso-drip.jpg" alt="Espresso curgând din portafiltru în ceașcă albă, două fire subțiri de culoarea chihlimbarului." width="2200" height="1467" loading="lazy" data-parallax="0.08">
+        <img src="assets/img/tape-02.png" class="tape-img tape-img--tr" alt="" width="260" height="76" aria-hidden="true">
+      </div>
+    </figure>
+
+    <div class="origin__text">
+      <h2 class="secthead__title">Aceeași disciplină, două extracții</h2>
+      <p>Pâinea și cafeaua sunt aceeași problemă pusă de două ori: cât timp, la ce temperatură, cu câtă apă. Un croissant prost și un espresso prost se strică în același fel: grăbite.</p>
+      <p>De aceea cântărim doza, cronometrăm curgerea și aruncăm ce trece de fereastră. Nu e pedanterie; e singurul mod în care rezultatul de mâine seamănă cu cel de azi.</p>
+
+      <dl class="specs">
+        <div><dt>Făină</dt><dd>Grâu<span class="tbc">de confirmat: moara, soiul și tipul de măciniș</span></dd></div>
+        <div><dt>Boabe</dt><dd>Prăjire pentru espresso<span class="tbc">de confirmat: prăjitoria și originea</span></dd></div>
+        <div><dt>Apă</dt><dd>Filtrată și remineralizată</dd></div>
+        <div><dt>Unt</dt><dd>82% grăsime, pentru laminare</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <aside class="marginalia marginalia--origin" data-marginalia>
+    <p>Cronometrul e mai cinstit decât gustul nostru la ora șase dimineața.</p>
+  </aside>
+</section>
+
+
+<!-- ═══ FILA 6 — GALERIA ═════════════════════════════════════════════════ -->
+<section class="leaf leaf--ink gallery" id="galerie">
+  <div class="rules" aria-hidden="true"></div>
+
+  <header class="secthead secthead--ink">
+    <h2 class="secthead__title">Probe atașate</h2>
+    <p class="secthead__note">Spațiul, foaia, felia și extracția, fotografiate de aproape.</p>
+  </header>
+
+  <ul class="specimens">
+    <li class="specimen">
+      <img src="assets/img/loaf-halves.jpg" alt="Două jumătăți de pâine artizanală pe lemn, miezul expus." width="1600" height="1067" loading="lazy">
+      <span class="specimen__tag num">01 · Secțiune</span>
+    </li>
+    <li class="specimen specimen--tall">
+      <img src="assets/img/croissant-tray.jpg" alt="Croissante proaspăt coapte pe tavă, straturile vizibile pe margine." width="1400" height="2100" loading="lazy">
+      <span class="specimen__tag num">02 · Laminare</span>
+    </li>
+    <li class="specimen">
+      <img src="assets/img/flour-apron.jpg" alt="Mâini în șorț presărând făină pe blatul de lucru." width="1600" height="1067" loading="lazy">
+      <span class="specimen__tag num">03 · Blat</span>
+    </li>
+    <li class="specimen">
+      <img src="assets/img/shop-interior.jpg" alt="Interiorul unei brutării, rafturi cu pâine și tejghea." width="1600" height="1067" loading="lazy">
+      <span class="specimen__tag num">04 · Sală</span>
+    </li>
+    <li class="specimen specimen--wide">
+      <img src="assets/img/crust-slices.jpg" alt="Felii de pâine cu crustă groasă pe un tocător de lemn." width="2000" height="1333" loading="lazy">
+      <span class="specimen__tag num">05 · Felie</span>
+    </li>
+    <li class="specimen">
+      <img src="assets/img/espresso-pour.jpg" alt="Espresso curgând în pahar de sticlă la espressorul profesional." width="1600" height="1067" loading="lazy">
+      <span class="specimen__tag num">06 · Extracție</span>
+    </li>
+  </ul>
+</section>
+
+
+<!-- ═══ FILA 7 — REGISTRUL DE OPINII ═════════════════════════════════════ -->
+<section class="leaf leaf--paper opinions" id="opinii">
+  <div class="rules rules--paper" aria-hidden="true"></div>
+  <div class="margin-rule margin-rule--paper" aria-hidden="true"></div>
+
+  <header class="secthead">
+    <h2 class="secthead__title">Registrul de opinii</h2>
+    <p class="secthead__note">Pagina rezervată pentru ce spun oamenii care au intrat pe ușă.</p>
+    <p class="placeholder-chip"><span aria-hidden="true">◇</span> Rezervat. Nu inventăm recenzii, presă sau distincții</p>
+  </header>
+
+  <ol class="quotes">
+    <li class="quote" data-row>
+      <p class="quote__index num">01</p>
+      <h3 class="quote__slot">Recenzie de client</h3>
+      <p class="quote__meta num">Nume · locație · dată</p>
+      <p class="quote__state num">rând liber</p>
+    </li>
+    <li class="quote" data-row>
+      <p class="quote__index num">02</p>
+      <h3 class="quote__slot">Apariție în presă</h3>
+      <p class="quote__meta num">Publicație · titlu · link</p>
+      <p class="quote__state num">rând liber</p>
+    </li>
+    <li class="quote" data-row>
+      <p class="quote__index num">03</p>
+      <h3 class="quote__slot">Distincție sau premiu</h3>
+      <p class="quote__meta num">Organizator · categorie · an</p>
+      <p class="quote__state num">rând liber</p>
+    </li>
+  </ol>
+
+  <p class="opinions__note"><span>Până când primim surse reale, rândurile rămân goale. Trimite-ne capturi,
+    linkuri sau diplome și le trecem în registru exact cum sunt.</span></p>
+</section>
+
+
+<!-- ═══ FILA 8 — TREI TEJGHELE ═══════════════════════════════════════════ -->
+<section class="leaf leaf--ink counters" id="locatii">
+  <div class="rules" aria-hidden="true"></div>
+  <div class="margin-rule" aria-hidden="true"></div>
+
+  <header class="secthead secthead--ink">
+    <h2 class="secthead__title">Trei tejghele în Constanța</h2>
+    <p class="secthead__note">Același aluat, aceeași cafea, același program: zilnic 09:00–18:00.</p>
+  </header>
+
+  <ol class="counters__list">
+    <li class="counter" data-counter>
+      <p class="counter__index num">01</p>
+      <h3 class="counter__name">Mircea cel Bătrân</h3>
+      <p class="counter__addr">Bd. Mircea cel Bătrân 139</p>
+      <p class="counter__hours num"><span class="counter__dot" data-open-dot aria-hidden="true"></span>09:00 – 18:00, zilnic</p>
+      <a class="counter__tel num" href="tel:+40770711329">0770 711 329</a>
+      <a class="counter__map" href="https://www.google.com/maps/search/?api=1&amp;query=Nuruk%2C%20Bd.%20Mircea%20cel%20B%C4%83tr%C3%A2n%20139%2C%20Constan%C8%9Ba" target="_blank" rel="noopener">Deschide harta</a>
+    </li>
+    <li class="counter" data-counter>
+      <p class="counter__index num">02</p>
+      <h3 class="counter__name">Centru Vechi</h3>
+      <p class="counter__addr">Str. Tomis 43</p>
+      <p class="counter__hours num"><span class="counter__dot" data-open-dot aria-hidden="true"></span>09:00 – 18:00, zilnic</p>
+      <a class="counter__tel num" href="tel:+40749342496">0749 342 496</a>
+      <a class="counter__map" href="https://www.google.com/maps/search/?api=1&amp;query=Nuruk%2C%20Str.%20Tomis%2043%2C%20Constan%C8%9Ba" target="_blank" rel="noopener">Deschide harta</a>
+    </li>
+    <li class="counter" data-counter>
+      <p class="counter__index num">03</p>
+      <h3 class="counter__name">Boema</h3>
+      <p class="counter__addr">Str. Tomis 334</p>
+      <p class="counter__hours num"><span class="counter__dot" data-open-dot aria-hidden="true"></span>09:00 – 18:00, zilnic</p>
+      <a class="counter__tel num" href="tel:+40748280849">0748 280 849</a>
+      <a class="counter__map" href="https://www.google.com/maps/search/?api=1&amp;query=Nuruk%2C%20Str.%20Tomis%20334%2C%20Constan%C8%9Ba" target="_blank" rel="noopener">Deschide harta</a>
+    </li>
+  </ol>
+
+  <aside class="marginalia marginalia--counters" data-marginalia>
+    <p>Vino devreme. Croissantele nu așteaptă pe nimeni.</p>
+  </aside>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="rules" aria-hidden="true"></div>
+  <div class="footer__inner">
+    <a class="footer__mark" href="#top" aria-label="Nuruk">
+      <img src="assets/brand/nuruk-logo.svg" alt="" width="2172" height="724">
+    </a>
+    <p class="footer__line">Patiserie artizanală și cafea de specialitate · Constanța</p>
+    <nav class="footer__links" aria-label="Subsol">
+      <a href="https://www.instagram.com/nurukconstanta/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#meniu">Meniu</a>
+      <a href="#locatii">Locații</a>
+    </nav>
+    <p class="footer__stamp num" data-year>Nuruk</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
